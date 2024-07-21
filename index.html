@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-wrapper {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            margin-bottom: 20px;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            color: #7f8c8d;
+        }
+        .pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(45deg, #f0f0f0, #f0f0f0 20px, #fff 20px, #fff 40px);
+            opacity: 0.1;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>포트폴리오</h1>
+    </header>
+    <section>
+        <h2>수학 정보 및 영상 제작기</h2>
+        <p>여기에서 수학 관련 정보를 소개하고, 관련된 영상 제작기를 공유합니다.</p>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <h3>프로젝트 목록</h3>
+        <p>여기에서 프로젝트와 관련된 정보 및 링크를 추가할 수 있습니다.</p>
+    </section>
+    <footer>
+        <p>© 2024 포트폴리오 웹 페이지</p>
+    </footer>
+    <div class="pattern"></div>
+</body>
+</html>
